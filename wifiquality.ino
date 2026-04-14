@@ -1,11 +1,12 @@
 #include <ESP8266WiFi.h>
+#include "credentials.h"
 
 #define led1 D0
 #define led2 D1
 #define led3 D2
 
-const char* ssid = "ABCD-EFG";
-const char* password = "1234567890";
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
 WiFiServer server(80);
 
